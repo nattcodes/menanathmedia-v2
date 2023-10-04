@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(CSS/font.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-image: url(Images/body.png);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+:root {
+    --Sansita: "Sansita", cursive;
+    --Courgette: "Courgette", cursive;
+    --Abel: "Abel", cursive;
+    --Livvic: "Livvic", cursive;
+    --Poppins: "Poppins", cursive;
+    --Averia_Serif_Libre: "Averia_Serif_Libre", cursive;
+    --Bangers: "Bangers", cursive;
+    --Be_Vietnam: "Be_Vietnam", cursive;
+    --Kaushan_Script: "Kaushan_Script", cursive;
+    --Special_Elite: "Special_Elite", cursive;
+    --Roboto: "Roboto", cursive;
+    --East_Sea_Dokdo: "East_Sea_Dokdo", cursive;
+    --Amaranth: "Amaranth", cursive;
+    --Neon: "Neon", cursive;
+    --Montserrat1: "Montserrat1", cursive;
+    --Montserrat2: "Montserrat2", cursive;
+    --Montserrat3: "Montserrat3", cursive;
+}
+
+nav .nav-links .li a {
+    position: relative;
+    padding: 0 7px;
+}
+
+nav .nav-links .li a::after {
+    content: "";
+    position: absolute;
+    background-color: #431972d8;
+    height: 2.5px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease-in-out;
+}
+
+nav .nav-links .li a:hover::after {
+    width: 100%;
 }
