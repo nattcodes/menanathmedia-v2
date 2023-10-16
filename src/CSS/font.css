@@ -132,3 +132,11 @@
     font-family: Montserrat3;
     src: url(../fonts/Montserrat/Montserrat-Bold.otf);
 }
+
+
+/*-----font family: Gabarito------*/
+
+@font-face {
+    font-family: Gabarito;
+    src: url(../fonts/Gabarito/Gabarito-Bold.ttf);
+}

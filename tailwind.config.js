@@ -22,7 +22,8 @@ module.exports = {
                 East_Sea_Dokdo: ["East_Sea_Dokdo"],
                 Special_Elite: ["Special_Elite"],
                 Be_Vietnam: ["Be_Vietnam"],
-                Averia_Serif_Libre: ["Averia_Serif_Libre"]
+                Averia_Serif_Libre: ["Averia_Serif_Libre"],
+                Gabarito: ["Gabarito"]
 
             }
         },
