@@ -53,7 +53,7 @@ nav .nav-links .li a {
 nav .nav-links .li a::after {
     content: "";
     position: absolute;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.432);
     height: 2.5px;
     width: 0;
     left: 0;
