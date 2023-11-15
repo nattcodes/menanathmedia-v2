@@ -28,6 +28,8 @@ const RootLayout = () => {
 
             </div>
 
+            
+
             <ul className="nav-links ">
               <div className={ menuBar ? "max-lg:hidden  nav-links grid grid-cols-5 gap-1 font-Poppins font-bold text-[.9rem] items-center text-center " : "max-lg:mt-[2rem]  max-lg:block max-lg:text-justify   nav-links grid grid-cols-5 gap-1 font-Poppins font-bold text-[.9rem] items-center text-center "}>
                 <li className=" max-lg:hover:bg-gray-200 max-lg:hover:px-3 transition ease-in-out duration-500 nav-item max-lg:border-t-2 max-lg:py-4 text-[1.1rem]">
