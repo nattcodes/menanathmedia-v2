@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Assets/Branding.png"
 import home from "../Assets/Untitled design (1).png"
 
 const Home = () => {
+  const [menuBar, setMenuBar] = useState(false)
+
+  const toggleMenu = () => {
+    setMenuBar = true
+    alert('clicked')
+  }
   return (
     <main>
        <div class="cursor"></div>
