@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(240, 240, 240);
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -34,7 +34,7 @@ ul {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(240, 240, 240);
     width: 100%;
     overflow-x: hidden;
     color: rgba(0, 0, 0, 0.887);
@@ -112,7 +112,6 @@ nav {
     display: block;
     height: 2px;
     width: 100%;
-    background: #0f0f0ff2;
     transition: width 0.3s;
 }
 
@@ -137,11 +136,9 @@ nav {
     left: 0%;
     width: 100%;
     height: 100dvh;
-    display: none !important;
-    display: inline-block;
     padding-top: 3.4rem;
     text-align: center;
-    transition: all 0.6s ease-in-out;
+    transition: all .6s ease-in-out;
     z-index: -1;
 }
 
@@ -159,8 +156,12 @@ nav {
 }
 
 .nav-links .nav-items a:hover {
-    color: #fec93f;
+    color: rgb(235, 235, 235);
     transition: all 0.3s ease-in-out;
+}
+
+.nav-links .nav-items a:hover~.nav-content .nav-links {
+    background-color: red;
 }
 
 .nav-items-h4 {
@@ -171,9 +172,37 @@ nav {
     margin-bottom: .1px;
 }
 
+.socials h5 {
+    font-size: .9rem;
+    font-weight: 800;
+    font-family: var(--Poppins);
+    color: rgb(145, 145, 145);
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+    color: rgb(145, 145, 145);
+    margin: 2rem;
+}
+
+.social-icons .icon-a i:hover {
+    color: #60a3fb;
+    transition: all.3s ease-in-out;
+}
+
+.social-icons .icon-b i:hover {
+    color: #f8f8f8;
+    transition: all.3s ease-in-out;
+}
+
+.social-icons .icon-c i:hover {
+    color: #d274fa;
+    transition: all.3s ease-in-out;
+}
+
 .home {
     height: auto;
-    margin-bottom: 3.8rem;
+    margin-bottom: 1.8rem;
 }
 
 .home-content {
@@ -263,10 +292,43 @@ nav {
     padding: 0 .8rem;
 }
 
+.about {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+
 .about-content {
     background-color: green;
     display: flex;
     justify-content: center;
     margin: 0 5rem;
     flex-wrap: wrap;
+}
+
+.about-content .ab {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ab .about-box {
+    align-items: center;
+}
+
+.ab .about-box.left {
+    width: 40%;
+    align-items: center;
+}
+
+.ab .about-box.right {
+    width: 50%;
+    align-items: center;
+}
+
+.ab .about-box.left img {
+    height: 500px;
+    background-color: red;
+    align-items: center;
 }
