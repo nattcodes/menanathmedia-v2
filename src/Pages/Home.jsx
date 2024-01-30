@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../Assets/Branding.png"
 import home from "../Assets/Untitled design (1).png"
-import about from "../Assets/Untitled design (5).png"
+import about from "../Assets/Untitled design (10).png"
 
 const Home = () => {
   const [showMenuBar, setShowMenuBar] = useState(false)
@@ -39,6 +39,7 @@ const Home = () => {
                 <a href="#" className="icon-a"><i className="fab fa-facebook"></i></a>
                 <a href="#" className="icon-b"><i className=" fab fa-x-twitter"></i></a>
                 <a href="#" className="icon-c"><i className="fab fa-instagram"></i></a>
+                <a href="#" className="icon-d"><i className="fab fa-linkedin-in"></i></a>
               </div>
             </div>
           </ul>
@@ -68,14 +69,45 @@ const Home = () => {
             <div className="about-box right">
               <div className="about-text">
                 <h1>About</h1>
-                <p>Mena Nath Media, right in the pulse of Lagos, isn't just another media and entertainment agency, we're your all-in-one hub for media, public relations, influencer marketing, Talent and brand management.</p>
-                <p>Born from a passion to redefine agency services in corporate and entertainment circles, we're here to craft success stories for individuals, corporate entities, and private outfits.</p>
+                <p><span className="p-purple">Mena Nath Media</span>, right in the pulse of Lagos, isn't just another media and entertainment agency, we're your all-in-one hub for media, public relations, influencer marketing, Talent and brand management.</p>
+                <p>Born from a passion to redefine agency services in corporate and entertainment circles, we're here to <span className="p-purple">craft success stories</span> for individuals, corporate entities, and private outfits.</p>
+                <button className="about-btn"><a href=""><span className="btn-about">More about us</span></a></button>
+                <div className="a-socials">
+                  <div className="a-social-icons">
+                    <a href="#" className="icon-a"><i className="fab fa-facebook"></i></a>
+                    <a href="#" className="icon-b"><i className=" fab fa-x-twitter"></i></a>
+                    <a href="#" className="icon-c"><i className="fab fa-instagram"></i></a>
+                    <a href="#" className="icon-d"><i className="fab fa-linkedin-in"></i></a>
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           
         </div>
       </section>
+      <section class="who">
+        <div className="who-content">
+              <div class="who-container">
+                  <div class="who-box">
+                      <h4 class="who4" id="one">OUR EDGE</h4>
+                      <h2 class="who2">We're Strategic</h2>
+                      <h3 class="who3">Our innovative and problem solving strategies based on target audience, insights and analysis are always focused on achieving measurable business result for our clients.</h3>
+                  </div>
+                  <div class="who-box">
+                      <h4 class="who4" id="two">OUR CORE</h4>
+                      <h2 class="who2">We're Professional</h2>
+                      <h3 class="who3">With our local knowledge and global insights, we have genuine understanding of your target market and how to connect with them on an emotional level that builds a deep and meaningful brand relation.</h3>
+                  </div>
+                  <div class="who-box">
+                      <h4 class="who4" id="three">OUR PLUS</h4>
+                      <h2 class="who2">We're Connected</h2>
+                      <h3 class="who3">We love to network and our unlimited contacts of celebrites,tastemakers and professionals within the industry keep us in the know at all times and allow our clients special access to insider opportunities.</h3>
+                  </div>
+            </div>
+        </div>
+    </section>
       
     </main>
     
