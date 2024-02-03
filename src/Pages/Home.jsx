@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import logo from "../Assets/Branding.png"
 import home from "../Assets/Untitled design (1).png"
 import about from "../Assets/Untitled design (10).png"
+import talent from "../Assets/pexels-rfstudio-3817495.jpg"
+import influencer from "../Assets/pexels-ron-lach-7801880.jpg"
+import media from "../Assets/pexels-flo-dahm-699459.jpg"
+import content from "../Assets/pexels-leeloo-the-first-8970680.jpg"
+import event from "../Assets/pexels-pixabay-356065.jpg"
 
 const Home = () => {
   const [showMenuBar, setShowMenuBar] = useState(false)
@@ -107,7 +112,44 @@ const Home = () => {
                   </div>
             </div>
         </div>
-    </section>
+      </section>
+      <section className="services">
+        <div className="services-content">
+          <h1>Services</h1>
+          <div className="services-item">
+            <div class="slide-img">
+                <img src={talent}/>
+                <div class="service-overlay">
+                    <h3>Talents</h3>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src={influencer}/>
+                <div class="service-overlay">
+                    <h3>Influencer Marketing</h3>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src={media}/>
+                <div class="service-overlay">
+                    <h3>Media Relations</h3>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src={content}/>
+                <div class="service-overlay">
+                    <h3>Content Strategy</h3>
+                </div>
+            </div>
+            <div class="slide-img">
+                <img src={event}/>
+                <div class="service-overlay">
+                    <h3>Event Management</h3>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
     </main>
     
